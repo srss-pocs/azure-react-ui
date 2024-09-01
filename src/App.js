@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
+    fetch('https://fullstackapi-cecnbtg0hshkbtf5.eastus-01.azurewebsites.net/api/hello')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
